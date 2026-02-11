@@ -3,14 +3,14 @@ package con_isp;
 import java.util.*;
 
 /**
- * Implementación en memoria del repositorio que cumple ISP.
- * 
- * Características:
- * - Implementa TODAS las interfaces segregadas (Crear, Leer, Actualizar, Eliminar).
- * - Es la clase concreta que ejecuta la lógica CRUD.
- * - Los datos se almacenan en un Map (para simplificar, no usa base de datos).
- * 
- * Ventaja: si queremos usar solo lectura, inyectamos la interfaz LeerRepositorio.
+ Implementación en memoria del repositorio que cumple ISP.
+  
+  Características:
+  - Implementa TODAS las interfaces segregadas (Crear, Leer, Actualizar, Eliminar).
+  - Es la clase concreta que ejecuta la lógica CRUD.
+  - Los datos se almacenan en un Map (para simplificar, no usa base de datos).
+  
+  Ventaja: si queremos usar solo lectura, inyectamos la interfaz LeerRepositorio.
  */
 public class RepositorioEnMemoria implements CrearRepositorio, LeerRepositorio, ActualizarRepositorio, EliminarRepositorio {
     private final Map<String, Usuario> datos = new LinkedHashMap<>();

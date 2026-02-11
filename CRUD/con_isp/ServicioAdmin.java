@@ -1,18 +1,18 @@
 package con_isp;
 
 /**
- * Servicio administrativo que cumple ISP.
- * 
- * Inyección de dependencias segregadas:
- * - Recibe CrearRepositorio para crear.
- * - Recibe ActualizarRepositorio para actualizar.
- * - Recibe EliminarRepositorio para eliminar.
- * 
- * Ventaja ISP:
- * - Este servicio SOLO depende de las interfaces que usa.
- * - No tiene acceso a métodos de lectura (que no debería usar).
- * - Cambios en la lectura no lo afectan.
- * 
+ Servicio administrativo que cumple ISP.
+  
+  Inyección de dependencias segregadas:
+  - Recibe CrearRepositorio para crear.
+  - Recibe ActualizarRepositorio para actualizar.
+  - Recibe EliminarRepositorio para eliminar.
+  
+  Ventaja ISP:
+  - Este servicio SOLO depende de las interfaces que usa.
+  - No tiene acceso a métodos de lectura (que no debería usar).
+  - Cambios en la lectura no lo afectan.
+  
  * Nota: La misma implementación (RepositorioEnMemoria) cumple todas las interfaces.
  */
 public class ServicioAdmin {
