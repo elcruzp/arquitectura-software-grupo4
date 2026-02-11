@@ -2,6 +2,13 @@ package sin_isp;
 
 import java.util.*;
 
+/*
+ Implementación monolítica del repositorio (sin ISP).
+  
+  Nota:
+  - Implementa la interfaz "gorda" Repositorio completa.
+  - La lógica es la misma que en con_isp, pero aquí la interfaz no está segregada.
+ */
 public class RepositorioEnMemoria implements Repositorio {
     private final Map<String, Usuario> datos = new LinkedHashMap<>();
 
